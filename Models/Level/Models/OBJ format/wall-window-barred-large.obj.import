@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brr1fmu4ja18n"
+path="res://.godot/imported/wall-window-barred-large.obj-555a30cb9bf82c3a191011e8b5484bc9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-window-barred-large.obj-555a30cb9bf82c3a191011e8b5484bc9.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/wall-window-barred-large.obj"
+dest_files=["res://.godot/imported/wall-window-barred-large.obj-555a30cb9bf82c3a191011e8b5484bc9.mesh", "res://.godot/imported/wall-window-barred-large.obj-555a30cb9bf82c3a191011e8b5484bc9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

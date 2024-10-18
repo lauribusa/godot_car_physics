@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bokbm7nts3a0y"
+path="res://.godot/imported/column-rounded.obj-f16fddd668fa264cd1f469bb39905759.mesh"
+
+[deps]
+
+files=["res://.godot/imported/column-rounded.obj-f16fddd668fa264cd1f469bb39905759.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/column-rounded.obj"
+dest_files=["res://.godot/imported/column-rounded.obj-f16fddd668fa264cd1f469bb39905759.mesh", "res://.godot/imported/column-rounded.obj-f16fddd668fa264cd1f469bb39905759.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn272w4u7pk10"
+path="res://.godot/imported/figurine-cube-detailed.obj-78b09e1f5c8e968edf06f755e83ed68b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/figurine-cube-detailed.obj-78b09e1f5c8e968edf06f755e83ed68b.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/figurine-cube-detailed.obj"
+dest_files=["res://.godot/imported/figurine-cube-detailed.obj-78b09e1f5c8e968edf06f755e83ed68b.mesh", "res://.godot/imported/figurine-cube-detailed.obj-78b09e1f5c8e968edf06f755e83ed68b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hwfo5pae8mg0"
+path="res://.godot/imported/shape-hexagon.obj-3121c743f342b8b96bb7430391a8276e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shape-hexagon.obj-3121c743f342b8b96bb7430391a8276e.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/shape-hexagon.obj"
+dest_files=["res://.godot/imported/shape-hexagon.obj-3121c743f342b8b96bb7430391a8276e.mesh", "res://.godot/imported/shape-hexagon.obj-3121c743f342b8b96bb7430391a8276e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

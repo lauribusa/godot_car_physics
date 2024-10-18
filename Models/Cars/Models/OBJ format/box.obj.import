@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhw48fb67u00s"
+path="res://.godot/imported/box.obj-9c21fa7bb61fb3cab6290d581d89a67d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/box.obj-9c21fa7bb61fb3cab6290d581d89a67d.mesh"]
+
+source_file="res://Models/Cars/Models/OBJ format/box.obj"
+dest_files=["res://.godot/imported/box.obj-9c21fa7bb61fb3cab6290d581d89a67d.mesh", "res://.godot/imported/box.obj-9c21fa7bb61fb3cab6290d581d89a67d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

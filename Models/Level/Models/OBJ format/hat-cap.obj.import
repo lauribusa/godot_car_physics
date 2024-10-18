@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfouwdjhad6bf"
+path="res://.godot/imported/hat-cap.obj-54fa4ec7bf7e659dcf69c24ce2bfb6fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hat-cap.obj-54fa4ec7bf7e659dcf69c24ce2bfb6fc.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/hat-cap.obj"
+dest_files=["res://.godot/imported/hat-cap.obj-54fa4ec7bf7e659dcf69c24ce2bfb6fc.mesh", "res://.godot/imported/hat-cap.obj-54fa4ec7bf7e659dcf69c24ce2bfb6fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

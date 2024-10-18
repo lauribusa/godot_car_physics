@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dibftl2jsvtly"
+path="res://.godot/imported/button-floor-square-small.obj-2643a59e36201f905363d65f327a6082.mesh"
+
+[deps]
+
+files=["res://.godot/imported/button-floor-square-small.obj-2643a59e36201f905363d65f327a6082.mesh"]
+
+source_file="res://Models/Level/Models/OBJ format/button-floor-square-small.obj"
+dest_files=["res://.godot/imported/button-floor-square-small.obj-2643a59e36201f905363d65f327a6082.mesh", "res://.godot/imported/button-floor-square-small.obj-2643a59e36201f905363d65f327a6082.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

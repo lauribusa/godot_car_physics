@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://cf0kdjbllryhf"]
+
+[ext_resource type="Material" uid="uid://dm4v455n1yqb2" path="res://base_material.tres" id="1_pd4ct"]
+[ext_resource type="PackedScene" uid="uid://da0jiqn58khut" path="res://Prefabs/suspension_base.tscn" id="2_gkm2n"]
+[ext_resource type="Script" path="res://Scripts/movement_forward.gd" id="2_q6ihs"]
+[ext_resource type="Script" path="res://Scripts/suspension_controller.gd" id="3_b0h4g"]
+[ext_resource type="Script" path="res://Scripts/camera_debug.gd" id="4_jxpe3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gxoei"]
+size = Vector3(1, 0.25, 1.5)
+
+[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("movement_behavior", "suspensions")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10207, 0)
+script = ExtResource("3_b0h4g")
+debug = true
+movement_behavior = NodePath("ForwardForce")
+suspensions = [NodePath("Susp_BackLeft"), NodePath("Susp_BackRight"), NodePath("Susp_FrontLeft"), NodePath("Susp_FrontRight")]
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_gxoei")
+
+[node name="ForwardForce" type="Node3D" parent="." node_paths=PackedStringArray("rb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.4)
+script = ExtResource("2_q6ihs")
+rb = NodePath("..")
+
+[node name="Box" type="CSGBox3D" parent="."]
+size = Vector3(1, 0.25, 1.5)
+material = ExtResource("1_pd4ct")
+
+[node name="Susp_BackLeft" parent="." node_paths=PackedStringArray("car_rb") instance=ExtResource("2_gkm2n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.2, -0.6)
+car_rb = NodePath("..")
+
+[node name="Susp_BackRight" parent="." node_paths=PackedStringArray("car_rb") instance=ExtResource("2_gkm2n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.2, -0.6)
+car_rb = NodePath("..")
+
+[node name="Susp_FrontLeft" parent="." node_paths=PackedStringArray("car_rb") instance=ExtResource("2_gkm2n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.2, 0.6)
+car_rb = NodePath("..")
+
+[node name="Susp_FrontRight" parent="." node_paths=PackedStringArray("car_rb") instance=ExtResource("2_gkm2n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.2, 0.6)
+car_rb = NodePath("..")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 1.79911, 3.3481)
+script = ExtResource("4_jxpe3")

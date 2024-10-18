@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxwvr4ise2b20"]
+
+[ext_resource type="PackedScene" uid="uid://bfj5kgwd7jsye" path="res://Prefabs/sedan.tscn" id="1_fxpcr"]
+[ext_resource type="Script" path="res://Scripts/Camera_List.gd" id="1_ukjoo"]
+[ext_resource type="Script" path="res://Scripts/camera_debug.gd" id="2_31ie8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3dmwi"]
+size = Vector3(100, 0.5, 100)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_ukjoo")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.547987, 0.836487, 0, -0.836487, 0.547987, -4.76837e-07, 2.35451, 2.035)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.731151, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_3dmwi")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+size = Vector3(100, 0.5, 100)
+
+[node name="RigidBody3D" parent="." instance=ExtResource("1_fxpcr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.224876, 2.10207, 0)
+mass = 5.0
+gravity_scale = 1.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, -1, 0)
+raycast_distance = 1.0
+tightness = 20.0
+damping = 5.0
+
+[node name="Main_Camera" type="Camera3D" parent="."]
+transform = Transform3D(-0.962496, 0.000859525, 0.271294, 0.137046, 0.864565, 0.483474, -0.234135, 0.502521, -0.832258, 0.885529, 3.69538, -4.18046)
+script = ExtResource("2_31ie8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "fdfsfsfsfdsfsdfsffdsfsdfsd"

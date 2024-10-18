@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfj5kgwd7jsye"]
+
+[ext_resource type="PackedScene" uid="uid://cf0kdjbllryhf" path="res://Prefabs/car_base.tscn" id="1_dfhs4"]
+[ext_resource type="PackedScene" uid="uid://c8m1ufrhr62sm" path="res://Models/Cars/Models/FBX format/sedan.fbx" id="2_g4b4j"]
+
+[node name="RigidBody3D" instance=ExtResource("1_dfhs4")]
+gravity_scale = 2.0
+
+[node name="Collider" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0319214, 0.0726929, 0.0343628)
+
+[node name="sedan" parent="." index="1" instance=ExtResource("2_g4b4j")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.5, 0)
+
+[node name="Box" parent="." index="3"]
+visible = false
+
+[node name="Susp_BackLeft" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.295436, -0.75)
+target_position = Vector3(0, -0.5, 0)
+
+[node name="Susp_BackRight" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.295436, -0.75)
+target_position = Vector3(0, -0.5, 0)
+
+[node name="Susp_FrontLeft" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.295436, 0.75)
+target_position = Vector3(0, -0.5, 0)
+
+[node name="Susp_FrontRight" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.295436, 0.75)
+target_position = Vector3(0, -0.5, 0)
